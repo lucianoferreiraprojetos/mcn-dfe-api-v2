@@ -21,6 +21,9 @@ locale-gen pt_BR.UTF-8
 # Setar o locale/localização (precisa reiniciar a máquina, sudo reboot)
 update-locale LANG="pt_BR.UTF-8" LANGUAGE="pt_BR"
 
+# Instala o firebird
+apt install firebird3.0-server
+
 # Instala as dependências do delphi
 apt install -yy joe wget p7zip-full curl openssh-server build-essential zlib1g-dev libcurl4-gnutls-dev libncurses5
 

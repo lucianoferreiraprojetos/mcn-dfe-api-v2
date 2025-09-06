@@ -36,6 +36,9 @@ ln -s /usr/lib/x86_64-linux-gnu/libfbclient.so.2 /usr/lib/x86_64-linux-gnu/libfb
 # Baixa o paserver 22 para delphi 11.3
 curl https://altd.embarcadero.com/releases/studio/22.0/113/LinuxPAServer22.0.tar.gz -o /opt/PAServer22.0.tar.gz
 
+# Criar pasta base para aplicações
+mkdir /apps/
+
 # Descompacta o paserver
 tar -xf /opt/PAServer22.0.tar.gz -C /apps/
 

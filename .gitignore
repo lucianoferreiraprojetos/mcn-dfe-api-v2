@@ -80,3 +80,9 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+# Outros
+bin/
+download_xml/
+logs/
+conf/mcndfeapi.ini

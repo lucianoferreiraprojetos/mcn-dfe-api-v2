@@ -22,7 +22,7 @@ locale-gen pt_BR.UTF-8
 update-locale LANG="pt_BR.UTF-8" LANGUAGE="pt_BR"
 
 # Instala o firebird
-apt install firebird3.0-server
+apt install firebird3.0-server -y
 
 # Instala as dependências do delphi
 apt install -yy joe wget p7zip-full curl openssh-server build-essential zlib1g-dev libcurl4-gnutls-dev libncurses5
@@ -48,7 +48,7 @@ tar -xf /opt/PAServer22.0.tar.gz -C /apps/
 # Ajusta lib do python para o debug do paserver
 mv /apps/PAServer-22.0/lldb/lib/libpython3.so /apps/PAServer-22.0/lldb/lib/libpython3.so_ && ln -s /lib/x86_64-linux-gnu/libpython3.10.so.1 /apps/PAServer-22.0/lldb/lib/libpython3.so
 
-# Criar pasta para guardar os bancos de dados firebird
+# Cria a pasta para guardar os bancos de dados firebird
 mkdir -p /firebird/3.0/data
 
 # Mudar o dono para o grupo firebird

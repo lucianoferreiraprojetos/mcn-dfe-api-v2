@@ -1,0 +1,18 @@
+{
+	"name": "src",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/handle-exception": "^0.1.9",
+		"github.com/hashload/horse": "^3.1.6",
+		"github.com/hashload/horse-cors": "^1.0.6",
+		"github.com/hashload/horse-jwt": "^2.0.17",
+		"github.com/hashload/horse-octet-stream": "^1.9.11",
+		"github.com/hashload/jhonson": "^1.1.9",
+		"github.com/viniciussanchez/restrequest4delphi": "^v4.0.23",
+		"https://github.com/gabrielbaltazar/gbswagger": "^3.1.0"
+	}
+}

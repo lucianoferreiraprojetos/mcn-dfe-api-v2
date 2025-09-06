@@ -1,0 +1,86 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2025-04-29T21:06:43.7370185-04:00",
+	"installedModules": {
+		"github.com/andre-djsystem/hashlib4pascal": {
+			"name": "hashlib4pascal",
+			"version": "1.0.0",
+			"hash": "8528036224699ab509c7d8f31d691ffb",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/handle-exception": {
+			"name": "handle-exception",
+			"version": "0.1.9",
+			"hash": "b7878eb4d418c67420daf8cc2e7f9dda",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/horse": {
+			"name": "horse",
+			"version": "3.1.6",
+			"hash": "7fdacf6b762af6406e17d06e1c5fb0a1",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/horse-cors": {
+			"name": "horse-cors",
+			"version": "1.0.6",
+			"hash": "544456143eca0709bd9793b1fa04cb69",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/horse-jwt": {
+			"name": "horse-jwt",
+			"version": "2.0.17",
+			"hash": "a3ecf918269e5a7d587afbaa2a8cfd33",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/horse-octet-stream": {
+			"name": "horse-octet-stream",
+			"version": "1.9.11",
+			"hash": "b12c994839528b3499a2eecea67a5884",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/jhonson": {
+			"name": "jhonson",
+			"version": "1.1.9",
+			"hash": "ab9663f2e7c0ab2086e560c9c66ce092",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/paolo-rossi/delphi-jose-jwt": {
+			"name": "delphi-jose-jwt",
+			"version": "v3.3.1",
+			"hash": "30168430005de681e90bef999de6804a",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/viniciussanchez/restrequest4delphi": {
+			"name": "restrequest4delphi",
+			"version": "v4.0.23",
+			"hash": "9c56b6064b12085cf05b0696a11ea6e4",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/gabrielbaltazar/gbswagger": {
+			"name": "gbswagger",
+			"version": "3.1.0",
+			"hash": "1d45cb3210674c8eca2d9fe24c675c57",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

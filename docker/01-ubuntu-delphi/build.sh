@@ -1,0 +1,1 @@
+docker build . --tag desenvolmcn/ubuntu-delphi:22.04

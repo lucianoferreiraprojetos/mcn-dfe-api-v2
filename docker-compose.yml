@@ -1,0 +1,43 @@
+services:
+  db:
+    image: firebirdsql/firebird:3.0.9
+    container_name: firebird3_dfe
+    volumes:
+      - /docker-volumes/mcn-sistemas/mcn-dfe-api/data:/var/lib/firebird/data
+    ports:
+      - "3056:3050"
+    environment:
+      - FIREBIRD_ROOT_PASSWORD=masterkey
+      - FIREBIRD_DATABASE_DEFAULT_CHARSET=UTF8
+      - TZ=America/Cuiaba
+    networks:
+      - mcn_dfe_net  
+  backend1:
+    image: desenvolmcn/mcn-dfe-api:latest
+    container_name: mcn_dfe_api1
+    ports:
+      - "8081:8080"
+    networks:
+      - mcn_dfe_net  
+    depends_on:
+      - db  
+    environment:
+      - MCN_DFE_API_DB_HOST=firebird3_dfe
+      - MCN_DFE_API_DB_PORT=3050
+      - MCN_DFE_API_DB_USER=SYSDBA
+      - MCN_DFE_API_DB_PASS=masterkey
+      - MCN_DFE_API_DB_NAME=/var/lib/firebird/data/MCNDFEAPI_BANCO.FDB   
+      - MCN_DFE_API_LOG_FILE_PATH_LOGS=/apps/mcn-sistemas/mcn-dfe-api/logs
+      - MCN_DFE_API_NFE_PATH_DOWNLOAD_XML=/apps/mcn-sistemas/mcn-dfe-api/download_xml
+      - MCN_DFE_API_NFE_PATH_SCHEMAS=/apps/mcn-sistemas/mcn-dfe-api/schemas/nfe
+      - MCN_DFE_API_LOG_GRAFANA_LOKI_URLBASE=http://loki.mcnsistemas.net.br
+      - MCN_DFE_API_LOG_GRAFANA_LOKI_USER=admin
+      - MCN_DFE_API_LOG_GRAFANA_LOKI_PASS=admin159159
+      - MCN_DFE_API_LOG_GRAFANA_LOKI_LEVEL_MSG=error
+    volumes:
+      - /docker-volumes/mcn-sistemas/mcn-dfe-api/logs1/:/apps/mcn-sistemas/mcn-dfe-api/logs
+      - /docker-volumes/mcn-sistemas/mcn-dfe-api/conf/:/apps/mcn-sistemas/mcn-dfe-api/conf
+      - /docker-volumes/mcn-sistemas/mcn-dfe-api/download_xml1/:/apps/mcn-sistemas/mcn-dfe-api/download_xml
+networks:
+  mcn_dfe_net:
+    driver: bridge
